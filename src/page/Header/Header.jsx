@@ -58,17 +58,20 @@ const Header = () => {
           </div>
           <div className="navbar-end hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <NavLink className="mr-3" to={"/home"}>
+              <NavLink className="mr-5 font-bold text-gray-500" to={"/home"}>
                 Home
               </NavLink>
-              <NavLink className="mr-3" to={"/home"}>
-                Home
+              <NavLink className="mr-5 font-bold text-gray-500" to={"/home"}>
+                About Us
               </NavLink>
-              <NavLink className="mr-3" to={"/home"}>
-                Home
+              <NavLink className="mr-5 font-bold text-gray-500" to={"/home"}>
+                Our Services
               </NavLink>
-              <NavLink className="mr-3" to={"/home"}>
-                Home
+              <NavLink className="mr-5 font-bold text-gray-500" to={"/home"}>
+                Pages
+              </NavLink>
+              <NavLink className="mr-5 font-bold text-gray-500" to={"/home"}>
+                Portfolio
               </NavLink>
             </ul>
           </div>

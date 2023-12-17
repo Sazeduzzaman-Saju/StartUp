@@ -1,12 +1,13 @@
 import React from "react";
 import { BiSolidBadgeCheck } from "react-icons/bi";
+import ServicesCards from "./ServicesCards/ServicesCards";
 
 const WhatWeDo = () => {
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100">
-      <div className="container grid grid-cols-12 gap-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+      <div className="container grid grid-cols-12 gap-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between items-center">
         {/* Information column (col-7) */}
-        <div className="col-span-7 flex flex-col justify-center p-6 text-center rounded-sm lg:text-left">
+        <div className="col-span-6 flex flex-col justify-center p-6 text-center rounded-sm lg:text-left">
           <div className="flex w-48 items-center bg-white shadow-md p-2 rounded-full">
             <div>
               <svg
@@ -22,10 +23,10 @@ const WhatWeDo = () => {
             </div>
             <h6 className="text-black">WHAT WE DO</h6>
           </div>
-          <h1 className="text-5xl font-bold leading-none sm:text-6xl pt-10 pb-5 capitalize drop-shadow-xl">
+          <h1 className="text-4xl w-96 font-bold leading-none sm:text-4xl pt-10 pb-5 capitalize drop-shadow-xl">
           We do creative <span className="main_color">services</span> for your business needs 
           </h1>
-          <img className="w-96" src="../../../../public/imges/whatwedo.jpg" alt="" />
+          <img className="w-96 mt-3" src="../../../../public/imges/whatwedo.jpg" alt="" />
           <p className="mt-6 mb-8 text-lg sm:mb-12 text-justify text-slate-400">
           You will always get the best services from us!
           </p>
@@ -49,17 +50,15 @@ const WhatWeDo = () => {
               href="#"
               className="px-8 py-3 text-lg font-semibold rounded main-btn text-white hover:text-gray-900"
             >
-              Hire Us
+              See All Services
             </a>
           </div>
         </div>
         {/* Image column (col-5) */}
-        <div className="col-span-5 flex items-center justify-center p-6 mt-8 lg:mt-0">
-          <img
-            src="../../../../public/imges/about.png"
-            alt=""
-            className="object-contain h-full"
-          />
+        <div className="col-span-6 flex items-center justify-center">
+          {/* Service Column Start */}
+          <ServicesCards/>
+          {/* Service Column End */}
         </div>
       </div>
     </section>
