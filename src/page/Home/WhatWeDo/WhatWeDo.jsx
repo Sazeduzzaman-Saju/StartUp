@@ -24,11 +24,16 @@ const WhatWeDo = () => {
             <h6 className="text-black">WHAT WE DO</h6>
           </div>
           <h1 className="text-4xl w-96 font-bold leading-none sm:text-4xl pt-10 pb-5 capitalize drop-shadow-xl">
-          We do creative <span className="main_color">services</span> for your business needs 
+            We do creative <span className="main_color">services</span> for your
+            business needs
           </h1>
-          <img className="w-96 mt-3" src="../../../../public/imges/whatwedo.jpg" alt="" />
+          <img
+            className="w-96 mt-3"
+            src="../../../../public/imges/whatwedo.jpg"
+            alt="What We Do"
+          />
           <p className="mt-6 mb-8 text-lg sm:mb-12 text-justify text-slate-400">
-          You will always get the best services from us!
+            You will always get the best services from us!
           </p>
           <div className="pb-10">
             <p className="flex items-center">
@@ -57,7 +62,7 @@ const WhatWeDo = () => {
         {/* Image column (col-5) */}
         <div className="col-span-6 flex items-center justify-center">
           {/* Service Column Start */}
-          <ServicesCards/>
+          <ServicesCards />
           {/* Service Column End */}
         </div>
       </div>

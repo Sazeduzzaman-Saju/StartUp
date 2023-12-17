@@ -3,6 +3,8 @@ import HeroSection from "./HeroSection/HeroSection";
 import ClientSection from "./ClientSection/ClientSection";
 import AboutSection from "./AboutSection/AboutSection";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
+import CallToAction from "./CallToAction/CallToAction";
+import Portfolio from "./Portfolio/Portfolio";
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
           <ClientSection></ClientSection>
           <AboutSection></AboutSection>
           <WhatWeDo></WhatWeDo>
+          <CallToAction></CallToAction>
+          <Portfolio></Portfolio>
         </div>
       </div>
     </section>
