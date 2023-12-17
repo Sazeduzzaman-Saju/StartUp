@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap");
+
+:root {
+  --primary-color: #6c60fe;
+  --secondary-color: #6c60fe;
+  --main-color: #6c60fe;
+  --para-color: #6c60fe;
+  --title-color: #6c60fe;
+  --bg-color: #6c60fe;
+  --transparent-color: #6d60fe00;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+}
+.main_color{
+  color: var(--main-color);
+}
+
+.main-btn {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: white;
+}
+.main-btn:hover {
+  background-color: var(--transparent-color);
+  border: 1px solid var(--main-color);
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: var(--main-color);
+  transition: all 0.5s;
+}

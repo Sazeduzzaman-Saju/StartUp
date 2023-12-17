@@ -1,0 +1,72 @@
+.hero-toast {
+  position: relative;
+  top: -13rem;
+  left: 13rem;
+  z-index: 99;
+}
+.hero-toast {
+  animation: bounceUpDown 1s infinite alternate;
+}
+.relative {
+  position: relative;
+}
+
+.blob-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; /* Adjust the size of the blob */
+  height: 200px;
+  background-image: linear-gradient(to right bottom, #6c60fe, #695ef0, #665ce2, #635ad4, #6058c6);
+  border-radius: 50%;
+  animation: blobAnimation 4s ease-in-out infinite alternate;
+}
+
+.expe-card:hover{
+  background-color: var(--main-color);
+  color: white;
+  transition: all 0.5s;
+   border-radius: 50px;
+}
+.expe-link a:hover{
+  color: white;
+}
+@keyframes blobAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+@keyframes bounceUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px); /* You can adjust the distance */
+  }
+}
+
+.google-toaster {
+  background-color: white;
+  transition: all 0.5s;
+}
+.google-toaster:hover {
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+  color: white;
+}
+
+.arrow-img {
+  width: 280px;
+  position: relative;
+  top: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-toast {
+    display: none !important;
+  }
+}

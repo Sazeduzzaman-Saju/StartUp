@@ -1,0 +1,28 @@
+.relative {
+  position: static;
+}
+
+.blob-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; /* Set the width of the blob */
+  height: 500px; /* Set the height of the blob */
+  background-image: linear-gradient(to right bottom, #6c60fe, #695ef0, #665ce2, #635ad4, #6058c6);
+  border-radius: 50%;
+  animation: blobAnimation 4s ease-in-out infinite alternate;
+  z-index: 5; /* Set z-index to place it behind the image */
+}
+.banner-image{
+    z-index: 8; /* Set z-index to place it behind the image */
+}
+
+@keyframes blobAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
